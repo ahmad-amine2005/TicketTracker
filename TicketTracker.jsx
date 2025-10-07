@@ -22,7 +22,6 @@ export default function TicketTracker() {
   const [status, setStatus] = useState('Created');
   const [rating, setRating] = useState(0);
 
-  // Reset form when modal closes
   useEffect(() => {
     if (!modalVisible) {
       setTitle('');
@@ -233,6 +232,7 @@ const styles = StyleSheet.create({
  },
   input: {
     backgroundColor: '#f5f5f5',
+    color: 'black',
     borderRadius: 12,
     padding: 16,
     fontSize: 16,
@@ -250,7 +250,7 @@ const styles = StyleSheet.create({
     textAlignVertical: 'top',
   },
   picker: {
-    backgroundColor: '#f5f5f5',
+    backgroundColor: 'black',
     borderRadius: 12,
     marginBottom: 24,
     borderWidth: 1,
