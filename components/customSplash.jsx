@@ -87,7 +87,7 @@ export default function CustomSplash({ onFinish }) {
   // Interpolate shimmer color between white and light blue
   const shimmerColor = textShimmer.interpolate({
     inputRange: [0, 1],
-    outputRange: ["#FFFFFF", "#BFDBFE"], // white → light blue
+    outputRange: ["#111827", "#374151"], // white → light blue
   });
 
   return (
@@ -110,7 +110,7 @@ export default function CustomSplash({ onFinish }) {
           },
         ]}
       >
-        Connecting Innovation to Agriculture
+        Digitalize your ticket track keeping
       </Animated.Text>
       <Animated.View style={{ opacity: textOpacity, marginTop: 30 }}>
         <ActivityIndicator size="large" color="#FFFFFF" />
@@ -134,5 +134,6 @@ const styles = StyleSheet.create({
     fontWeight: "600",
     marginTop: 16,
     textAlign: "center",
+    color: "black",
   },
 });
